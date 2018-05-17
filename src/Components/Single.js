@@ -10,7 +10,9 @@ class Single extends Component {
     e.preventDefault()
     const user = document.getElementById('userInput')
     const comment = document.getElementById('commentInput')
-    this.props.addComment(this.id, user.value, comment.value)
+    user.value && comment.value
+    ? this.props.addComment(this.id, user.value, comment.value)
+    : []
     user.value = ''
     comment.value = ''
   }

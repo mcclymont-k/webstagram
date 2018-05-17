@@ -7,10 +7,18 @@
   grid-template-rows: 100px 1fr;
 }
 
-.mainContainer a {
+.mainTitle {
   align-self: center;
   text-decoration: none;
-  color: black
+  color: black;
+  padding: 5px;
+  border: 1px solid black;
+  width: 110px;
+  margin: auto;
+}
+
+.mainTitle:hover{
+  color: red;
 }
 
 .databox {
@@ -65,7 +73,13 @@
   background-color: white;
   padding: 5px;
   border-radius: 4px;
-  font-size: 10px
+  font-size: 10px;
+  text-decoration: none;
+  color: black
+}
+
+.picButton:hover {
+  color: red;
 }
 
 .picButton:hover {

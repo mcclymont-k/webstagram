@@ -8,7 +8,7 @@ class Main extends Component {
   render() {
     return (
       <div className='mainContainer'>
-        <Link to='/'>Webstagram</Link>
+        <Link className='mainTitle' to='/'>Webstagram</Link>
         <Router>
           <div>
             <Route exact path='/' render={(props) => <PhotoGrid {...this.props} {...props}/>} />
